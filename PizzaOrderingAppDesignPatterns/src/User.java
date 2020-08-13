@@ -11,7 +11,7 @@ public class User extends UserTypes {
 	}
 
 	@Override
-	public void accessUserType() {
+	public void accessUser() {
 		// TODO Auto-generated method stub
 		
 	}

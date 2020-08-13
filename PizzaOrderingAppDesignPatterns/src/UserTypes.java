@@ -5,5 +5,5 @@ protected IUserType usertype;
 	protected UserTypes(IUserType usertype) {
 		this.usertype = usertype;
 	}
-public abstract void accessUserType();
+public abstract void accessUser();
 }

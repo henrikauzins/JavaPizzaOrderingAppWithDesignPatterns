@@ -24,7 +24,7 @@ public class MainApp {
 				
 			UserTypes newCustomer = new User(new CustomerView());
 			
-			newCustomer.accessUserType();
+			newCustomer.accessUser();
 			
 		
 			
