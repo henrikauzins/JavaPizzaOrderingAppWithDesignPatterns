@@ -7,6 +7,8 @@ import java.util.Collections;
 public class MainApp {
 
 	// Pizza ordering application using Bridge, Observer and Builder software Design Patterns
+	
+	// this program demonstrates a simple usage of customers creating an order through user input
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner userInput = new Scanner(System.in);
