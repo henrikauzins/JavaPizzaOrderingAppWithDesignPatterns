@@ -6,13 +6,12 @@ public class User extends UserTypes {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void access() {
-		usertype.accessUser();
-	}
+	
 
 	@Override
 	public void accessUser() {
 		// TODO Auto-generated method stub
+		usertype.accessUser();
 		
 	}
 
