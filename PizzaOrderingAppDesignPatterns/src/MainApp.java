@@ -93,7 +93,7 @@ public class MainApp {
 		// stores summary of order
 		Object[] orderSummary = new Object[9];
 		
-		// prices of order components
+		// stores prices of order components
 		 ArrayList<Float> finalOrderPrice = new ArrayList<Float>();
 
 		
@@ -156,7 +156,7 @@ public class MainApp {
         		// prints out value of inputted key
         		System.out.println("this will cost you £" + pizzaSelection.get(pizzaName));
         		orderSummary[2] = pizzaName;
-        		// adds value from key in hashmap into final order price arraylist
+        		// adds value from key in the hashmap into final order price arraylist
         		finalOrderPrice.add(pizzaSelection.get(pizzaName));
         		
         		

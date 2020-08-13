@@ -68,8 +68,8 @@ public class Order implements IOrder {
 	}
 	
 	public String toString() {
-		return GetCustomerName();
-	}
+		return GetCustomerName() + " you have ordered a " + GetPizzaType() + GetPizzaName() + " topped with" + GetPizzaTopping() + " on a " + GetPizzaBase() + " base with " + GetPizzaSides() + " and a bottle of " + GetDrinks() + " , you have successfully ordered from our " + GetBranch() + " branch";
+	} 
 
 	public Order() {
 		this.customers = new ArrayList<>();
@@ -77,6 +77,14 @@ public class Order implements IOrder {
 	
 	public Order(OrderBuilder builder) {
 		this.orderNumber = builder.orderNumber;
+		this.customerName = builder.customerName;
+		this.pizzaName = builder.pizzaName;
+		this.pizzaType = builder.pizzaType;
+		this.toppName = builder.toppName;
+		this.baseType = builder.baseType;
+		this.sidesName = builder.sidesName;
+		this.drinksName = builder.drinksName;
+		this.location = builder.location;
 	}
 	
 	public static class OrderBuilder{
@@ -92,18 +100,17 @@ public class Order implements IOrder {
 	     
 	     
 	     
-	     public OrderBuilder(int orderNumber, String cusName, String pizzaName, String pizzaType, String topping,
-				String pizzaBase, String sides, String drink, String location) {
+	     public OrderBuilder(int OrderNumber, String CustomerName, String PizzaName, String PizzaType, String ToppName, String BaseType, String SidesName, String DrinksName, String Location) {
 			// TODO Auto-generated constructor stub
-	    	 orderNumber = orderNumber;
-	         customerName = cusName;
-	         pizzaName = pizzaName;
-	         pizzaType = pizzaType;
-	         toppName = topping;
-	         baseType = pizzaBase;
-	         sidesName = sides;
-	         drinksName = drink;
-	         location = location;
+	    	 orderNumber = OrderNumber;
+	         customerName = CustomerName;
+	         pizzaName = PizzaName;
+	         pizzaType = PizzaType;
+	         toppName = ToppName;
+	         baseType = BaseType;
+	         sidesName = SidesName;
+	         drinksName = DrinksName;
+	         location = Location;
 		}
 
 
