@@ -117,10 +117,10 @@ public class MainApp {
 	
 		
         System.out.println("Time to create your Order!");
-    	//topic
-		//Order testOrder = new Order();
+    	
         
         orderNumber = orderNumber + 1;
+        orderSummary[0] = orderNumber;
         
         System.out.println("what is your name: ");
         cusName = userInput.nextLine();
@@ -298,7 +298,7 @@ public class MainApp {
 		System.out.println("would you like to place your order");
 		response = userInput.nextLine();
 		if (response.equals("yes")) {
-			// builder pattern object 
+			// builder pattern function
 			Order finalOrder = new Order.OrderBuilder(orderNumber, cusName, pizzaName, pizzaType, topping, pizzaBase, sides, drink, location).constructOrder();
 			newOrder.placeOrder(newCustomer);
 			newCustomer.setOrder(finalOrder);
@@ -307,6 +307,7 @@ public class MainApp {
 			
 			newOrder.postMessage("order has been completed");
 			
+			// prints users order to screen
 			System.out.println(finalOrder.toString());
 			
 			
